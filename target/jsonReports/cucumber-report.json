@@ -1,0 +1,463 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-12T11:12:07.611Z",
+        "line": 14,
+        "name": "Login functionality",
+        "description": "",
+        "id": "loging-into-the-portal;login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19070536400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on landing page",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinitions.user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1189027800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicked on login page",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinitions.user_clicked_on_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63255500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Message display as \"Welcome, Please Sign In!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome, Please Sign In!\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.LoginStepDefinitions.message_display_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 445617500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username \"testdemowebshop@gmail.com\" and password \"Test123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdemowebshop@gmail.com\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"Test123\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepdefinitions.LoginStepDefinitions.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4190326500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on login button",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinitions.user_click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129608400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Validate user account ID",
+            "match": {
+              "location": "stepdefinitions.LoginStepDefinitions.validate_user_account_id()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CartTest"
+          }
+        ]
+      }
+    ],
+    "name": "Loging into the portal",
+    "description": "",
+    "id": "loging-into-the-portal",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-12T11:12:33.173Z",
+        "line": 4,
+        "name": "Adding items to cart",
+        "description": "",
+        "id": "adding-items-to-cart;adding-items-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16582400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on shopping page",
+            "match": {
+              "location": "stepdefinitions.ShoppingStepDefinition.user_is_on_shopping_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6606102900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User cleared shopping cart",
+            "match": {
+              "location": "stepdefinitions.ShoppingStepDefinition.user_cleared_shopping_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3665292800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selected \"Books\" from categories",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.ShoppingStepDefinition.user_selected_from_categories(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5482372200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User selected a book from the list displayed",
+            "match": {
+              "location": "stepdefinitions.ShoppingStepDefinition.user_selected_a_book_from_the_list_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2401563700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the qutatinty more than one",
+            "match": {
+              "location": "stepdefinitions.ShoppingStepDefinition.enter_the_qutatinty_more_than_one()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3302620400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicked on \"Add to cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add to cart\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.ShoppingStepDefinition.user_clicked_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5141177200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Validate \"The product has been added to your shopping cart\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The product has been added to your shopping cart\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.ShoppingStepDefinition.validate_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CartTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-12T11:12:59.820Z",
+        "line": 14,
+        "name": "Validating items in cart",
+        "description": "",
+        "id": "adding-items-to-cart;validating-items-in-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1003900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on cart page",
+            "match": {
+              "location": "stepdefinitions.CartStepDefinition.user_is_on_cart_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5143104200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User validated subtotal price for the selected book",
+            "match": {
+              "location": "stepdefinitions.CartStepDefinition.user_validated_subtotal_price_for_the_selected_book()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2305069900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicked on agree terms and conditions",
+            "match": {
+              "location": "stepdefinitions.CartStepDefinition.user_clicked_on_agree_terms_and_conditions()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2583469000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clciked on checkout button",
+            "match": {
+              "location": "stepdefinitions.CartStepDefinition.user_clciked_on_checkout_button()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CartTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-12T11:13:09.871Z",
+        "line": 21,
+        "name": "User is on payment page",
+        "description": "",
+        "id": "adding-items-to-cart;user-is-on-payment-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User is on payment page",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_is_on_payment_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11790607800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicked on billing address dropdown",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_clicked_on_billing_address_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5607592800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User slected billing and shipping address are same",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_slected_billing_and_shipping_address_are_same()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2283108800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User selected shipping method as Next Day Air",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_selected_shipping_method_as_next_day_air()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2330122400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User clicked on continue",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_clicked_on_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2275373500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User selcted payment method as COD (Cash on delivery)",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_selcted_payment_method_as_cod_cash_on_delivery()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5434058000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User validated message as \"You will pay by COD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You will pay by COD\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.PaymentStepDefinition.user_validated_message_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8326270000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User clicked on confirm order",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.user_clicked_on_confirm_order()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2148071700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "print the order number",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.print_the_order_number()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6082078800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "click on continue",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.click_on_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1197955500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "logout from appilication",
+            "match": {
+              "location": "stepdefinitions.PaymentStepDefinition.logout_from_appilication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CartTest"
+          }
+        ]
+      }
+    ],
+    "name": "Adding items to cart",
+    "description": "",
+    "id": "adding-items-to-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Shopping.feature",
+    "tags": []
+  }
+]
